@@ -17,9 +17,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
+			<head>
+				<link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+			</head>
 			<body className={inter.className}>
 				<div className="min-h-screen grid grid-cols-app">
-					<Sidebar/>
+					<Sidebar />
 					<main className="px-4 pb-12 pt-8">{children}</main>
 				</div>
 			</body>
