@@ -16,7 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" className="antialiased">
 			<head>
 				<link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
 			</head>
