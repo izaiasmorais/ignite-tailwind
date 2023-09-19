@@ -1,7 +1,8 @@
 import { SettingsTabs } from "@/components/settings-tabs";
 import { InputControl, InputPrefix, InputRoot } from "@/components/input";
-import { Mail, UploadCloud, User } from "lucide-react";
+import { ChevronDown, Mail, UploadCloud, User } from "lucide-react";
 import * as FileInput from "@/components/form/file-input";
+import { Select } from "@/components/form/select";
 
 export default function Home() {
 	return (
@@ -119,7 +120,7 @@ export default function Home() {
 							Country
 						</label>
 
-						<div></div>
+						<Select />
 					</div>
 
 					<div className="grid gap-3 grid-cols-form pt-5">
