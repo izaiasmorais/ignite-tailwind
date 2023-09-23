@@ -1,9 +1,20 @@
 import { SettingsTabs } from "@/components/settings-tabs";
 import { InputControl, InputPrefix, InputRoot } from "@/components/input";
-import { ChevronDown, Mail, UploadCloud, User } from "lucide-react";
+import {
+	Bold,
+	ChevronDown,
+	Italic,
+	Link,
+	List,
+	ListOrdered,
+	Mail,
+	UploadCloud,
+	User,
+} from "lucide-react";
 import * as FileInput from "@/components/form/file-input";
 import { Select } from "@/components/form/select";
 import { SelectItem } from "@/components/form/select/select-item";
+import { TextArea } from "@/components/textarea";
 
 export default function Home() {
 	return (
@@ -149,7 +160,52 @@ export default function Home() {
 							</span>
 						</label>
 
-						<div></div>
+						<div className="space-y-3">
+							<div className="grid gap-3 grid-cols-2">
+								<Select placeholder="" defaultValue="normal">
+									<SelectItem value="normal" text="Normal text" />
+									<SelectItem value="medium" text="Medium text" />
+								</Select>
+
+								<div className="flex items-center gap-1">
+									<button
+										type="button"
+										className="p-2 hover:bg-zinc-50 rounded-md"
+									>
+										<Bold className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+									</button>
+									<button
+										type="button"
+										className="p-2 hover:bg-zinc-50 rounded-md"
+									>
+										<Italic className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+									</button>
+									<button
+										type="button"
+										className="p-2 hover:bg-zinc-50 rounded-md"
+									>
+										<Link className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+									</button>
+									<button
+										type="button"
+										className="p-2 hover:bg-zinc-50 rounded-md"
+									>
+										<List className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+									</button>
+									<button
+										type="button"
+										className="p-2 hover:bg-zinc-50 rounded-md"
+									>
+										<ListOrdered
+											className="h-4 w-4 text-zinc-500"
+											strokeWidth={3}
+										/>
+									</button>
+								</div>
+							</div>
+
+							<TextArea defaultValue="	Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem	itaque neque corrupti commodi eos maiores molestiae inventore voluptatibus? Suscipit nemo modi molestias quos omnis	aperiam consectetur esse impedit repudiandae." />
+						</div>
 					</div>
 
 					<div className="grid gap-3 grid-cols-form pt-5">
