@@ -20,6 +20,21 @@ const config: Config = {
 					25: "#f6faff",
 				},
 			},
+			keyframes: {
+				slideDownAndFade: {
+					from: { opacity: "0", transform: "translateY(-2px)" },
+					to: { opacity: "1", transform: "translateY(0)" },
+				},
+				// slideUpAndFade: {
+				// 	from: { opacity: "1" },
+				// 	to: { opacity: "0" },
+				// },
+			},
+			animation: {
+				slideDownAndFade:
+					"slideDownAndFade 400ms cubic-bazier(0.16, 1, 0.3, 1)",
+				// slideUpAndFade: "slideUpAndFade 1s linear",
+			},
 		},
 	},
 	plugins: [],
