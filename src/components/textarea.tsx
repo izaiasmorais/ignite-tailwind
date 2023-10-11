@@ -7,7 +7,8 @@ export function TextArea(prop: TextAreaProps) {
 		<textarea
 			{...prop}
 			id="bio"
-			className="min-h-[120px] resize-y w-full rounded-lg border border-zinc-3 px-3 py-2 shadow-sm"
+			className="min-h-[120px] resize-y w-full rounded-lg border border-zinc-3 px-3 py-2 shadow-sm
+			focus:border-violet-300 focus:ring-4 focus:ring-violet-100 outline-none"
 		/>
 	);
 }

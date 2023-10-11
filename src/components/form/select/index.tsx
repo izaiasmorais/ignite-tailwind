@@ -13,7 +13,8 @@ export function Select({ children, placeholder, ...props }: SelectProps) {
 		<SelectPrimitive.Root {...props}>
 			<SelectPrimitive.Trigger
 				className="flex h-11 w-full items-center justify-between gap-2 px-3 py-2 shadow-sm
-							rounded-lg border border-zinc-300 data-[placeholder]:text-zinc-600"
+							rounded-lg border border-zinc-300 data-[placeholder]:text-zinc-600 outline-none
+							focus:border-violet-300 focus:ring-4 focus:ring-violet-100"
 			>
 				<SelectPrimitive.Value
 					placeholder={placeholder}
