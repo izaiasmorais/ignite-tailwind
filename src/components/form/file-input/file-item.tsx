@@ -1,17 +1,33 @@
 import { Button } from "@/components/button";
 import { formatBytes } from "@/utils/format-bytes";
 import { UploadCloud, Trash2, CheckCircle2 } from "lucide-react";
+import { tv, VariantProps } from "tailwind-variants";
 
-export interface FileItemProps {
+const fileItem = tv({
+	base: "group flex items-center gap-4 rounded-lg border border-zinc-200 p-4",
+
+	variants: {
+		state: {
+			progress: "",
+			complete: "",
+			error: "",
+		},
+	},
+
+	defaultVariants: {
+		state: "progress",
+	},
+});
+
+export interface FileItemProps extends VariantProps<typeof fileItem>{
 	name: string;
 	size: number;
 }
 
-export function FileItem({ name, size }: FileItemProps) {
-	const state = "error" as "progress" | "error" | "complete";
+export function FileItem({ name, size, state }: FileItemProps) {
 
 	return (
-		<div className="group flex items-center gap-4 rounded-lg border	border-zinc-200 p-4">
+		<div className={fileItem({state})}>
 			<div
 				className="rounded-full border-4 border-violet-100 bg-violet-200 p-2
 						text-violet-600"
