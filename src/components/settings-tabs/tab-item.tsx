@@ -17,7 +17,7 @@ export function TabItem({ value, title, isSelected = false }: TabItemProps) {
 		>
 			<span
 				className="rounded group-focus-visible:ring-2 group-focus-visible:ring-violet-400
-			group-focus-visible:ring-offset-4"
+			group-focus-visible:ring-offset-4 whitespace-nowrap"
 			>
 				{title}
 			</span>
