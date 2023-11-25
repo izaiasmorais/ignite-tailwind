@@ -1,11 +1,11 @@
 import { SettingsTabs } from "@/components/settings-tabs";
 import { InputControl, InputPrefix, InputRoot } from "@/components/input";
 import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
-import * as FileInput from "@/components/form/file-input";
 import { Select } from "@/components/form/select";
 import { SelectItem } from "@/components/form/select/select-item";
 import { TextArea } from "@/components/textarea";
 import { Button } from "@/components/button";
+import * as FileInput from "@/components/form/file-input";
 
 export default function Home() {
 	return (
@@ -22,7 +22,7 @@ export default function Home() {
 					<div className="space-y-1">
 						<h2 className="text-lg font-medium text-zinc-900">Personal info</h2>
 						<span className="text-sm text-zinc-500">
-							Update your photo in personal details here
+							Update your photo in personal details here.
 						</span>
 					</div>
 
