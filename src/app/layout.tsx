@@ -21,7 +21,7 @@ export default function RootLayout({
 				<link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
 			</head>
 			<body className={inter.className}>
-				<div className="lg:grid min-h-screen lg:grid-cols-app">
+				<div className="lg:grid min-h-screen lg:grid-cols-app dark:bg-zinc-900">
 					<Sidebar />
 					<main className="px-4 pb-12 pt-24 lg:col-start-2 lg:px-8 lg:pt-8 max-w-[100vw]">
 						{children}

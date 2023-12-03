@@ -12,7 +12,7 @@ export function InputControl(props: InputControlProps) {
 	return (
 		<input
 			className="flex-1 outline-none border-0 bg-transparent p-0 text-zinc-900
-			placeholder-zinc-600 dark:text-zinc-100 dark:placeholder:zinc-400"
+			placeholder-zinc-600 dark:text-zinc-100 dark:placeholder-zinc-400"
 			{...props}
 		/>
 	);
